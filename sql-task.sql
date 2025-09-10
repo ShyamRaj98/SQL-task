@@ -84,10 +84,7 @@ create table order_items (
 
 -- Sample Order Items Data (mapping orders to products)
 insert into order_items (order_id, product_id, quantity) values
-(1, 1, 2),  -- Order 1 has 2x Product A
-(1, 2, 1),  -- Order 1 has 1x Product B
-(2, 3, 1),  -- Order 2 has 1x Product C
-(3, 4, 1);  -- Order 3 has 1x Product D
+(1, 1, 2), (1, 2, 1), (2, 3, 1), (3, 4, 1);  
 
 -- Now Query: Get the names of customers who have ordered Product A
 select distinct c.name
